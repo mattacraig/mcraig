@@ -1,0 +1,91 @@
+// Global CSS goes here
+
+header,
+nav,
+.main-nav,
+section,
+.row,
+footer {
+	display: flex;
+}
+
+nav,
+section,
+footer {
+	justify-content: center;
+	align-items: center
+}
+
+header {
+	flex-direction: column;
+	align-items: center;
+}
+
+.light {
+	font-weight: $light;
+}
+
+.container {
+	width: 65vw;
+}
+
+a {
+	text-decoration: none;
+	position: relative;
+	transition: .3s color;
+}
+
+a:not(.fa):hover {
+	color: $link-hover-color;
+}
+
+.link:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 1px;
+	background: $primary-text-color;
+	transition: .3s width, .3s background;
+	z-index: -1;
+}
+
+.link:hover:after {
+	width: 100%;
+	background: $link-hover-color;
+}
+
+// Typography 
+
+body {
+	font-family: $primary-font;
+}
+
+body,
+a {
+	color: $primary-text-color;
+}
+
+h1,
+h2,
+.cta {
+	font-weight: $bold;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 2.25rem;
+}
+
+p,
+a:not(.brand) {
+	font-size: 1.125rem;
+}
+
+p {
+	line-height: 1.5rem;
+}

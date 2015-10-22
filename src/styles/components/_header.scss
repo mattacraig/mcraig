@@ -1,0 +1,100 @@
+header {
+	height: 100vh;
+}
+
+nav {
+	width: 100%;
+	padding-top: 1.5rem;
+}
+
+.main-nav li:first-child {
+	margin-right: auto;
+}
+
+.main-nav li {
+	margin-right: 1.5rem;
+}
+
+.brand {
+	font-size: 1.5rem;
+	font-weight: $bold;
+}
+
+.header-content {
+	text-align: center;
+	padding-top: 11.25rem;
+}
+
+.intro-heading {
+	font-size: 3.75rem;
+	padding-bottom: 1rem;
+}
+
+.intro-sub-heading {
+	font-size: 1.875rem;
+	padding-bottom: 8rem;
+}
+
+.fa-angle-down {
+	display: block;
+	width: 3.75rem;
+	height: 3.75rem;
+	font-size: 2rem;
+	border-radius: 100%;
+	color: $secondary-text-color;
+	line-height: 3.75rem;
+	margin: 1rem auto;
+	background: $link-hover-color;
+	position: relative;
+}
+
+.fa-angle-down:hover {
+	animation: bounce 1.2s ease-in-out;
+}
+
+.tooltip {
+	position: absolute;
+	bottom: 123%;
+	right: -126%;
+	color: $secondary-text-color;
+	width: 13.125rem;
+	text-align: center;
+	background: $link-hover-color;
+	border-radius: 5px;
+	opacity: 0;
+	transition: .3s opacity;
+}
+
+.fa-angle-down:hover .tooltip {
+	opacity: 1;
+}
+
+.tooltip:after {
+	content: '';
+	position: absolute;
+	bottom: -.5rem;
+	left: 46%;
+	width: 0;
+	height: 0;
+	border-left: .5rem solid transparent;
+	border-right: .5rem solid transparent;
+	border-top: .5rem solid $link-hover-color;
+}
+
+@keyframes bounce {
+	0%, 100% {
+		transform: translateY(0);
+	}
+
+	30% {
+		transform: translateY(1rem);
+	}
+
+	50% {
+		transform: translateY(0);
+	}
+
+	70% {
+		transform: translateY(1rem);
+	}
+}

@@ -9,4 +9,6 @@ $bold: 700;
 // Color-Scheme
 $primary-text-color: #333;
 $secondary-text-color: #fff;
-$link-hover-color: #7ec0ee; 
+$skyblue: #7ec0ee;
+$link-hover-color: darken($skyblue, 15%); 
+$primary-bg: #f3f3f3;

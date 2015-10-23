@@ -1,5 +1,9 @@
 // Global CSS goes here
 
+body {
+	background: $primary-bg;
+}
+
 header,
 nav,
 .main-nav,
@@ -39,7 +43,8 @@ a:not(.fa):hover {
 	color: $link-hover-color;
 }
 
-.link:after {
+.link:after,
+.content-link:after {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -51,9 +56,34 @@ a:not(.fa):hover {
 	z-index: -1;
 }
 
-.link:hover:after {
+.content-link:after {
+	background: $link-hover-color;
+}
+
+.link:hover:after,
+.content-link:hover:after {
 	width: 100%;
 	background: $link-hover-color;
+}
+
+.content-link {
+	color: $link-hover-color;
+}
+
+.section-heading {
+	position: relative;
+	padding-top: 3rem;
+	padding-bottom: 1rem;
+}
+
+.section-heading:after {
+	position: absolute;
+	bottom: 0;
+	right: 45%;
+	content: '';
+	width: 10%;
+	height: 1px;
+	background: $primary-text-color;
 }
 
 // Typography 

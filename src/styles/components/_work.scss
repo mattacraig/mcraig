@@ -1,0 +1,57 @@
+.thumbnail {
+	width: 40%;
+	position: relative;
+}
+
+.project-links {	
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: $skyblue;
+	text-align: center;
+	padding-top: 25%;
+	opacity: 0;
+	transition: .3s opacity;
+}
+
+.project-links:hover {
+	opacity: 1;
+}
+
+.project-links .fa {
+	display: inline-block;
+	color: $secondary-text-color;
+	font-size: 2.5rem;
+	padding: 1rem;
+}
+
+.project-description {
+	width: 60%;
+	padding-top: 10%;
+}
+
+.project-description p {
+	padding-top: 1.5rem;
+}
+
+.project-description:first-child {
+	padding-right: 6rem;
+	text-align: right;
+}
+
+.project-description:last-child {
+	padding-left: 6rem;
+}
+
+.work .row {
+	height: 50%;
+	padding-top: 4rem;
+}
+
+.thumbnail:first-child {
+	background: url('https://unsplash.it/200/300?image=864');
+}
+
+.thumbnail:last-child {
+	background: url('https://unsplash.it/200/300?image=862');
+}

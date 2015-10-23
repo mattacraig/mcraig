@@ -25,12 +25,17 @@ header {
 	align-items: center;
 }
 
+section {
+	height: 100vh;
+}
+
 .light {
 	font-weight: $light;
 }
 
 .container {
 	width: 65vw;
+	height: 100%;
 }
 
 a {
@@ -70,13 +75,24 @@ a:not(.fa):hover {
 	color: $link-hover-color;
 }
 
-.section-heading {
+.section-heading,
+.project-heading {
+	text-align: center;
 	position: relative;
+}
+
+.section-heading {
 	padding-top: 3rem;
 	padding-bottom: 1rem;
 }
 
-.section-heading:after {
+.project-heading {
+	padding-bottom: .5rem;
+	font-weight: $bold;
+}
+
+.section-heading:after,
+.project-heading:after {
 	position: absolute;
 	bottom: 0;
 	right: 45%;

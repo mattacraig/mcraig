@@ -4,7 +4,7 @@ header {
 
 nav {
 	width: 100%;
-	padding-top: 1.5rem;
+	padding-top: 1rem;
 	height: 60px;
 }
 
@@ -21,7 +21,7 @@ nav {
 	font-weight: $bold;
 }
 .hidden-nav {
-	padding-top: 0;
+	// padding-top: 0;
 	width: 100%;
 	position: fixed;
 	top: 0;
@@ -33,7 +33,15 @@ nav {
 }
 
 .hidden-nav a {
+	color: $primary-bg;
+}
+
+.hidden-nav a:hover {
 	color: $secondary-text-color;
+}
+
+.hidden-nav .link:hover:after {
+	background: $secondary-text-color;
 }
 
 .nav-reveal {

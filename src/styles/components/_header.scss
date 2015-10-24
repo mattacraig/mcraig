@@ -76,6 +76,7 @@ nav {
 	position: relative;
 }
 
+
 .fa-angle-down:hover {
 	animation: bounce 1.2s ease-in-out;
 }
@@ -89,11 +90,13 @@ nav {
 	text-align: center;
 	background: $link-hover-color;
 	border-radius: 5px;
+	visibility: hidden;
 	opacity: 0;
-	transition: .3s opacity;
+	transition: .3s visibility, .3s opacity;
 }
 
 .fa-angle-down:hover .tooltip {
+	visibility: visible;
 	opacity: 1;
 }
 

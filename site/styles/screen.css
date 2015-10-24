@@ -221,11 +221,13 @@ nav {
   text-align: center;
   background: #7eC0ee;
   border-radius: 5px;
+  visibility: hidden;
   opacity: 0;
-  -webkit-transition: .3s opacity;
-          transition: .3s opacity; }
+  -webkit-transition: .3s visibility, .3s opacity;
+          transition: .3s visibility, .3s opacity; }
 
 .fa-angle-down:hover .tooltip {
+  visibility: visible;
   opacity: 1; }
 
 .tooltip:after {
